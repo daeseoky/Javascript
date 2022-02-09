@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.브라우저 객체</title>
+</head>
+<body>
+    <h3>4.브라우저 객체</h3>
+    <script>
+        //window 객체
+        window.alert('window 객체의 대화상자');
+        let result = window.prompt('window 객체의 대화상자');
+
+        if(result){
+            alert('확인 누름')
+        }else{
+            alert('취소 누름')
+        }
+
+        //location 객체
+    </script>
+        <!-- history 객체 -->
+        <button onclick="location.href='./1.객체.html';">1.객체 이동</button>
+        <!-- replace는 이동후 히스토리를 지움(뒤로가기가 안됨) -->
+        <button onclick="location.replace('./2.내장객체.html');">2.내장객체 이동</button>
+
+        <button onclick="history.forward();">앞으로</button>
+        <button onclick="history.back();">뒤로</button>
+ 
+    
+</body>
+</html>
